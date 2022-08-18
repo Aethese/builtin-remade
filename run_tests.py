@@ -1,4 +1,5 @@
-import sys
+import os, sys
+os.system('cls' if os.name == 'nt' else 'clear')
 
 from rounder import tests as rt
 
