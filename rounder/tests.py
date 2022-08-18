@@ -3,7 +3,7 @@ from rounder import rounder
 
 def main():
 	failed = 0
-	rounder.disable_warnings = False
+	rounder.disable_warnings = True
 
 	print(f'Running Rounder version {rounder.__version__}')
 	try:  # Test 1
