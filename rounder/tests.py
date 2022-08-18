@@ -1,18 +1,11 @@
-import os, time
-
-try:
-	import rounder
-except ImportError:
-	from rounder import rounder
-
-os.system('cls' if os.name == 'nt' else 'clear')
-
-failed = 0
-rounder.disable_warnings = False
-
-print(f'Running Rounder version {rounder.__version__}')
+import time
+from rounder import rounder
 
 def main():
+	failed = 0
+	rounder.disable_warnings = False
+
+	print(f'Running Rounder version {rounder.__version__}')
 	try:  # Test 1
 		test_1a = rounder.round(4.5191, 0)
 		test_1b = rounder.round(4.4191)
