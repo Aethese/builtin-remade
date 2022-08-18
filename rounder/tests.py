@@ -5,7 +5,7 @@ def main():
 	failed = 0
 	rounder.disable_warnings = True
 
-	print(f'Running Rounder version {rounder.__version__}')
+	print(f'\nRunning Rounder version {rounder.__version__}')
 	try:  # Test 1
 		test_1a = rounder.round(4.5191, 0)
 		test_1b = rounder.round(4.4191)
