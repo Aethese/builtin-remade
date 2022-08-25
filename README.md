@@ -1,4 +1,4 @@
-# Built-in Remade
+# Built-in Remade [![Tests](https://github.com/Aethese/builtin-remade/actions/workflows/run_test.yml/badge.svg)](https://github.com/Aethese/builtin-remade/actions/workflows/run_test.yml)
 Built-in Python functions remade for fun :)
 
 ## Note
