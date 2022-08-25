@@ -9,25 +9,26 @@ def main():
 
 	failed = 0
 	print(f'\nRunning Upper version {upper.__version__}')
-	original = 'AbCdEakaA'
-	new_upper = upper.make_upper(original)
-	is_correct = True if new_upper == original.upper() else False
-	if not is_correct:
-		failed += 1
-	print(f'original: {original} | new: {new_upper} | new {"=" if is_correct else "!"}= correct')
 
-	original = 'as8ASd9Af9asdj'
-	new_upper = upper.make_upper(original)
-	is_correct = True if new_upper == original.upper() else False
+	original_string = 'AbCdEakaA'
+	new_upper_string = upper.make_upper(original_string)
+	is_correct = True if new_upper_string == original_string.upper() else False
 	if not is_correct:
 		failed += 1
-	print(f'original: {original} | new: {new_upper} | new {"=" if is_correct else "!"}= correct')
+	print(f'original: {original_string} | new: {new_upper_string} | new {"=" if is_correct else "!"}= correct')
 
-	original = 'ALJAkjasd(9139Ajjasd'
-	new_lower = upper.make_lower(original)
-	is_correct = True if new_lower == original.lower() else False
+	original_string = 'as8ASd9Af9asdj'
+	new_upper_string = upper.make_upper(original_string)
+	is_correct = True if new_upper_string == original_string.upper() else False
 	if not is_correct:
 		failed += 1
-	print(f'original: {original} | new: {new_lower} | new {"=" if is_correct else "!"}= correct')
+	print(f'original: {original_string} | new: {new_upper_string} | new {"=" if is_correct else "!"}= correct')
+
+	original_string = 'ALJAkjasd(9139Ajjasd'
+	new_lower = upper.make_lower(original_string)
+	is_correct = True if new_lower == original_string.lower() else False
+	if not is_correct:
+		failed += 1
+	print(f'original: {original_string} | new: {new_lower} | new {"=" if is_correct else "!"}= correct')
 
 	return failed
