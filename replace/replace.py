@@ -1,3 +1,5 @@
+import aethpi
+
 def replace(input_string: str, character_changing: str, new_character: str):
 	'''
 	replaces a character or characters in a string with a different character
