@@ -229,6 +229,5 @@ def main():
 	else:
 		print('Rounder test 15 failed:', test_15a, test_15b)
 		failed += 1
-	
-	print(f'\n{failed} rounder test(s) failed')
+
 	return failed
