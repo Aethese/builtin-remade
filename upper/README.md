@@ -1,5 +1,5 @@
 # Upper
-Acts the same way the `.upper()` function works. It will capitalize all lowercase letters in a string. There is also
+Acts the same way the `.upper()` function works. It will capitalize all lowercase letters in a string
 
 ## Usage
 You can use upper, or lower, like below
