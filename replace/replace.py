@@ -1,4 +1,4 @@
-import aethpi
+__version__ = '0.1.0'
 
 def replace(input_string: str, character_changing: str, new_character: str):
 	'''
@@ -16,4 +16,19 @@ def replace(input_string: str, character_changing: str, new_character: str):
 		a single character or a string
 	'''
 
-	pass
+	if not isinstance(input_string, str):
+		raise ValueError(f'A string is needed, not {type(input_string).__name__}')
+
+	string_location = 0
+	for character in input_string:
+		if character in character_changing:
+			location = 0
+			for look_in_string in character_changing:
+				if look_in_string == character:
+					break
+				else:
+					location += 1
+			input_string = input_string[:string_location] + new_character + input_string[string_location+1:]
+		string_location += 1
+
+	return input_string
