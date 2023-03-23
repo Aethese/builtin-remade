@@ -1,2 +1,7 @@
 # Replace
-Works just like the replace function (`.replace('replace_character', 'replace_with_character')`).
+Works just like the replace function
+
+## Usage
+```py
+replace('input_string', 'character_changing', 'new_character')
+```
