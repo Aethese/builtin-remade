@@ -72,13 +72,13 @@ def main():
 		rounder.round(3.14159, 3)
 		rounder.round(3.14159, 4)
 		finish_time1 = time.time() - start_time1
-		finish_time1a = rounder.round(finish_time1, 2)  # hehe
+		finish_time1a = rounder.round(finish_time1, 2)  # rounder usage ftw
 
 		start_time2 = time.time()
 		round(3.14159, 2)
 		round(3.14159, 3)
 		round(3.14159, 4)
-		finish_time2 = time.time() - start_time1
+		finish_time2 = time.time() - start_time2
 		finish_time2a = rounder.round(finish_time2, 2)
 	except Exception as e:
 		print('Rounder test 5 failed with error:', e)
@@ -228,6 +228,19 @@ def main():
 		print('Rounder test 15 passed')
 	else:
 		print('Rounder test 15 failed:', test_15a, test_15b)
+		failed += 1
+
+	try:  # Test 16
+		test_16a = rounder.round(3.14159265358979323846264338327950288, 14)
+		test_16b = rounder.round(3.14159265358979323846264338327950288, 15)
+	except Exception as e:
+		print('Rounder test 16 failed with error:', e)
+		failed += 1
+
+	if test_16a == 3.14159265358979 and test_16b == 3.141592653589793 and type(test_16a).__name__ == 'float' and type(test_16b).__name__ == 'float':
+		print('Rounder test 16 passed')
+	else:
+		print('Rounder test 16 failed:', test_16a, test_16b)
 		failed += 1
 
 	return failed
