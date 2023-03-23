@@ -1,4 +1,4 @@
-from replace import replace
+import replace
 
 def main():
 	failed = 0
@@ -21,8 +21,8 @@ def main():
 	print(f'original: {original} | should be: {should_be} | replaced: {replaced} | replaced {"=" if is_correct else "!"}= should be')
 
 	original = 'mylasttest'
-	replaced = replace.replace(original, 't', '')
-	should_be = 'mylases'
+	replaced = replace.replace(original, 't', 'x')
+	should_be = 'mylasxxesx'
 	is_correct = True if replaced == should_be else False
 	if not is_correct:
 		failed += 1
