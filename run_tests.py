@@ -14,12 +14,12 @@ if rounder_test != 0:
 	print('Rounder test(s) failed!')
 	sys.exit(1)
 
-print(f'\n{upper_test} upper test(s) failed')
+print(f'{upper_test} upper test(s) failed')
 if upper_test != 0:
 	print('Upper test(s) failed!')
-	sys.exit()
+	sys.exit(1)
 
-print(f'\n{replace_test} replace test(s) failed')
+print(f'{replace_test} replace test(s) failed')
 if replace_test != 0:
 	print('Replace test(s) failed!')
-	sys.exit()
+	sys.exit(1)
