@@ -1,4 +1,4 @@
-import replace
+from replace import replace
 
 def main():
 	failed = 0
